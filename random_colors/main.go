@@ -2,10 +2,10 @@ package main
 
 import (
 	"fmt"
-	"github.com/go-exercises/random_colors/models"
+	"random/models"
 )
 
 func main(){
-	fmt.Println(models.RandonColor())
+	fmt.Println(models.RandomColor())
 }
 	
