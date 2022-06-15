@@ -1,7 +1,11 @@
 package main
 
-import "github.com/go-exercises/scrabble_score/letters"
+import (
+	"fmt"
+	"scrabble/letters"
+)
 
-func main (){
-	letters.ScoreFor()
+func main() {
+	sum := letters.ScoreFor()
+	fmt.Println(sum)
 }

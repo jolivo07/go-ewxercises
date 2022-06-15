@@ -1,33 +1,32 @@
-package letters 
+package letters
 
-func LettersMap() map[string]int {
-	var letters = make(map[string]int)
-	letters["a"] = 1
-	letters["e"] = 1
-	letters["i"] = 1
-	letters["o"] = 1
-	letters["u"] = 1
-	letters["l"] = 1
-	letters["n"] = 1
-	letters["r"] = 1
-	letters["s"] = 1
-	letters["t"] = 1
-	letters["d"] = 2
-	letters["g"] = 2
-	letters["b"] = 3
-	letters["c"] = 3
-	letters["m"] = 3
-	letters["p"] = 3
-	letters["f"] = 4
-	letters["h"] = 4
-	letters["w"] = 4
-	letters["y"] = 4
-	letters["v"] = 4
-	letters["k"] = 5
-	letters["j"] = 8
-	letters["x"] = 8
-	letters["q"] = 10
-	letters["z"] = 10
-
-	 return letters
-}
+var (
+	LettersMap = map[string]int{
+		"a": 1,
+		"e": 1,
+		"i": 1,
+		"o": 1,
+		"u": 1,
+		"l": 1,
+		"n": 1,
+		"r": 1,
+		"s": 1,
+		"t": 1,
+		"d": 2,
+		"g": 2,
+		"b": 3,
+		"c": 3,
+		"m": 3,
+		"p": 3,
+		"f": 4,
+		"h": 4,
+		"w": 4,
+		"y": 4,
+		"v": 4,
+		"k": 5,
+		"j": 8,
+		"x": 8,
+		"q": 1,
+		"z": 1,
+	}
+)
