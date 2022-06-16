@@ -2,25 +2,25 @@ package operation
 
 import "fmt"
 
-type Operation struct {
+type Numbers struct {
 	Num1 int
 	Num2 int
 }
 
-func (c Operation) Addition() int {
+func (c Numbers) Addition() int {
 	return c.Num1 + c.Num2
 }
-func (c Operation) Subtraction() int {
+func (c Numbers) Subtraction() int {
 	return c.Num1 - c.Num2
 }
-func (c Operation) Multiplication() int {
+func (c Numbers) Multiplication() int {
 	return c.Num1 * c.Num2
 }
-func (c Operation) Division() int {
+func (c Numbers) Division() int {
 	return c.Num1 / c.Num2
 }
 
-func (c Operation) Result() {
+func (c Numbers) ResultMessage() {
 	fmt.Printf("Addition: %d \nSubtraction: %d \nMultiplication: %d \nDivision: %d \n", c.Addition(), c.Subtraction(), c.Multiplication(), c.Division())
 
 }

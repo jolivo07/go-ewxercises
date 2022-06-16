@@ -1,9 +1,7 @@
 package main
 
-import (
-	"github.com/go-exercises/calculator/operation"
-)
+import "models/operation"
 
 func main() {
-	operation.Operation{3, 2}.Result()
+	operation.Numbers{5,5}.ResultMessage()
 }
