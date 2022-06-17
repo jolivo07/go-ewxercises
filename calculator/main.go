@@ -3,5 +3,5 @@ package main
 import "models/operation"
 
 func main() {
-	operation.Numbers{5,5}.ResultMessage()
+	operation.Numbers{Num1: 5, Num2: 5}.ResultMessage()
 }
