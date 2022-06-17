@@ -20,9 +20,9 @@ func GetApiApod() Apod {
 		fmt.Println(err)
 	}
 
-	var apodObject Apod
-	json.Unmarshal(responseData, &apodObject)
+	var apod Apod
+	json.Unmarshal(responseData, &apod)
 
-	return apodObject
+	return apod
 
 }
