@@ -1,6 +1,5 @@
 package company_data
 
-import "fmt"
 
 type Employee struct {
 	Name    string
@@ -23,30 +22,30 @@ func Init() Employes {
 
 }
 
-func (e Employes) NumberEmployees() {
+func (e Employes) NumberEmployees()int {
 
-	fmt.Printf("Number of employees: %v \n", len(e))
-
+	return len(e)
 }
 
-func (e Employes) NumberMen() {
-	count := 0
+func (e Employes) NumberMen() int{
+	cont := 0
+	
 	for _, v := range e {
 		if v.Grender == "M" {
-			count++
+			cont++
 		}
 	}
-	fmt.Printf("Number Men: %v \n", count)
+	return cont
 }
 
-func (e Employes) NumberWomen() {
-	count := 0
+func (e Employes) NumberWomen() int {
+	cont := 0
 	for _, v := range e {
 		if v.Grender == "F" {
-			count++
+			cont++
 		}
 	}
-	fmt.Printf("Number Women: %v \n", count)
+	return cont
 }
 
 func (e Employes) Avg() int {
@@ -55,29 +54,28 @@ func (e Employes) Avg() int {
 	for _, v := range e {
 		sum += v.Age
 	}
-
 	return sum / len(e)
 }
 
-func (e Employes) AboveAvg(){
-
+func (e Employes) AboveAvg() int{
 	cont := 0
+
 	for _, v := range e {
 		if v.Age >= e.Avg() {
 			cont ++
 		}
 	}
-	fmt.Println("employees above the average age:",cont)
+	return cont
 }
 
 
-func (e Employes) BelowAvg(){
-
+func (e Employes) BelowAvg() int{
 	cont := 0
+
 	for _, v := range e {
 		if v.Age <= e.Avg() {
 			cont ++
 		}
 	}
-	fmt.Println("employees below the average age:",cont)
+	return cont
 }
